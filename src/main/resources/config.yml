@@ -1,0 +1,40 @@
+# RusTerritory 配置文件
+
+# 保护功能开关 (true=开启保护, false=关闭)
+protection:
+  pvp: true
+  build: true
+  destroy: true
+  interact: true
+  enter: true
+
+# 领地设置
+territory:
+  # 领地大小限制 (以方块数计算的最大体积)
+  max-size: 256
+  # 玩家最多拥有的领地数量 (-1=无限制)
+  max-per-player: 5
+
+# 选区工具设置
+selection:
+  # 选区工具物品类型
+  tool: WOODEN_SWORD
+  # 是否需要蹲下才能选区
+  require-sneak: true
+
+# 玩家权限
+player:
+  # 是否允许普通玩家创建领地
+  can-create: false
+  # 是否允许普通玩家删除自己的领地
+  can-delete: false
+
+# 消息设置
+messages:
+  enter-actionbar: "§a你进入了 §f{owner} §a的领地 §f{territory}"
+  leave-actionbar: "§e你离开了 §f{owner} §a的领地 §f{territory}"
+  deny-pvp: "§c此领地禁止PVP"
+  deny-build: "§c此领地禁止放置方块"
+  deny-destroy: "§c此领地禁止破坏方块"
+  deny-interact: "§c此领地禁止交互"
+  deny-enter: "§c此领地禁止进入"

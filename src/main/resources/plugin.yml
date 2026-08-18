@@ -1,0 +1,28 @@
+name: RusTerritory
+version: '1.0'
+main: top.mcocet.rusTerritory.RusTerritory
+api-version: '1.21'
+folia-supported: true
+authors: [ MCOCET ]
+description: 简易的领地插件
+website: https://home.mcocet.top/
+
+commands:
+  rut:
+    description: RusTerritory 管理员领地管理命令
+    usage: /rut <create|delete|list|tp|info|set|config|reload|help>
+    permission: rusterry.admin
+    permission-message: '§c你没有权限使用此命令！'
+  rus:
+    description: RusTerritory 玩家领地管理命令
+    usage: /rus <pos1|pos2|create|delete|list|tp|info|set|help>
+    permission: rusterry.player
+    permission-message: '§c你没有权限使用此命令！'
+
+permissions:
+  rusterry.admin:
+    description: RusTerritory 管理员权限
+    default: op
+  rusterry.player:
+    description: RusTerritory 玩家权限
+    default: true
